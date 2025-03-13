@@ -123,3 +123,8 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+footer {
+  background-color: brown;
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
