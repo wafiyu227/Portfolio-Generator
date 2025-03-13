@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfoli Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
     <nav>
-        <div class="logo">Portfolio Generator</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Projects</a></li>
-            
-        </ul>
+      <div class="logo">Portfolio Generator</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
     </nav>
-</header>
-<body>
-    <h1>Portfolio Generator</h1>
-    <div class="template-selection">
-        <button onclick="selectTemplate(1)">Template 1</button>
-        <button onclick="selectTemplate(2)">Template 2</button>
+  </header>
+  <body>
+    <h1 class="title">Portfolio Generator</h1>
+    <p class="description">
+      This is a tool that helps you to create a stunning portfolio with less
+      efforrt. Just customize the templates below to your satisfaction. You can
+      basically make changes to the style, font and theme to fit your intrerest
+    </p>
+    <div class="template-grid">
+      <div class="template-card" onclick="selectTemplate(1)">
+        <h2>Template 1</h2>
+      </div>
+      <div class="template-card">
+        <h2>Template 2</h2>
+      </div>
+      <div class="template-card">
+        <h2>Template 3</h2>
+      </div>
+      <div class="template-card">
+        <h2>Template 4</h2>
+      </div>
+      <div class="template-card">
+        <h2>Template 5</h2>
+      </div>
+      <div class="template-card">
+        <h2>Template 6</h2>
+      </div>
     </div>
-<div id="container"></div>
+    <div id="container"></div>
 
     <template id="template-1">
-        <div class="contents">
-            <h2>Template 1</h2>
-            <div class="template">
-                
-                <div class="profile-pic">
-                    <img src="/images/Afa Chebi.png" alt="" id="img-profile">
-                </div>
-                <div class="name-bio">
-                    <label for="name">Enter Your Full Name: </label>
-                <input type="text" id="name">
-                <label for="bio">Enter your bio: </label>
-                <textarea name="bio" id="bio"></textarea>
-                </div>
-                <div class="projects">
-                    <h2>YOUR PROJECTS</h2>
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <img src="/images/Afa Chebi.png" alt="" >
-                            <p>Project description</p>
-                            <p><a href="#">project link</a></p>
-                        </div>
-                        <div class="project-card">
-                            <img src="/images/Afa Chebi.png" alt="" >
-                            <p>Project description</p>
-                            <p><a href="#">project link</a></p>
-                        </div>
-                        <div class="project-card">
-                            <img src="/images/Afa Chebi.png" alt="" >
-                            <p>Project description</p>
-                            <p><a href="#">project link</a></p>
-                        </div>
-                        <div class="project-card">
-                            <img src="/images/Afa Chebi.png" alt="" >
-                            <p>Project description</p>
-                            <p><a href="#">project link</a></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="social-links">
-                    <h2>Social profile-links</h2>
-                    <label for="linkedin">Linkedin Profile: </label>
-                    <input type="text" id="linkedin">
-                    <label for="twitter">Twitter Profile: </label>
-                    <input type="text" id="twitter">
-                    <label for="github">Github Profile: </label>
-                    <input type="text" id="github">
-    
-                </div>
+      <div class="contents">
+        <h2>Template 1</h2>
+        <div class="template">
+          <div class="profile-pic">
+            <img src="/images/Afa Chebi.png" alt="" id="img-profile" />
+          </div>
+          <div class="name-bio">
+            <label for="name">Enter Your Full Name: </label>
+            <input type="text" id="name" />
+            <label for="bio">Enter your bio: </label>
+            <textarea name="bio" id="bio"></textarea>
+          </div>
+          <div class="projects">
+            <h2>YOUR PROJECTS</h2>
+            <div class="project-grid">
+              <div class="project-card">
+                <img src="/images/Afa Chebi.png" alt="" />
+                <p>Project description</p>
+                <p><a href="#">project link</a></p>
+              </div>
+              <div class="project-card">
+                <img src="/images/Afa Chebi.png" alt="" />
+                <p>Project description</p>
+                <p><a href="#">project link</a></p>
+              </div>
+              <div class="project-card">
+                <img src="/images/Afa Chebi.png" alt="" />
+                <p>Project description</p>
+                <p><a href="#">project link</a></p>
+              </div>
+              <div class="project-card">
+                <img src="/images/Afa Chebi.png" alt="" />
+                <p>Project description</p>
+                <p><a href="#">project link</a></p>
+              </div>
             </div>
+          </div>
+          <div class="social-links">
+            <h2>Social profile-links</h2>
+            <label for="linkedin">Linkedin Profile: </label>
+            <input type="text" id="linkedin" />
+            <label for="twitter">Twitter Profile: </label>
+            <input type="text" id="twitter" />
+            <label for="github">Github Profile: </label>
+            <input type="text" id="github" />
+          </div>
         </div>
+      </div>
     </template>
 
     <template id="template-2">
-        <h2>Template 2</h2>
-        <div class="template">
-            <label for="name">Enter Your Full Name: </label>
-            <input type="text" id="name">
-            <label for="bio">Enter your bio: </label>
-            <textarea name="bio" id="bio"></textarea>
-            <div class="projects">
-                <h2>your projects</h2>
-                <img src="#" alt="project-2">
-                <p>project description</p>
-                <p>project link</p>
-            </div>
-            <div class="social-links">
-                <h2>Social profile-links</h2>
-                <label for="linkedin">Linkedin Profile: </label>
-                <input type="text" id="linkedin">
-                <label for="twitter">Twitter Profile: </label>
-                <input type="text" id="twitter">
-                <label for="github">Github Profile: </label>
-                <input type="text" id="github">
-
-            </div>
+      <h2>Template 2</h2>
+      <div class="template">
+        <label for="name">Enter Your Full Name: </label>
+        <input type="text" id="name" />
+        <label for="bio">Enter your bio: </label>
+        <textarea name="bio" id="bio"></textarea>
+        <div class="projects">
+          <h2>your projects</h2>
+          <img src="#" alt="project-2" />
+          <p>project description</p>
+          <p>project link</p>
         </div>
+        <div class="social-links">
+          <h2>Social profile-links</h2>
+          <label for="linkedin">Linkedin Profile: </label>
+          <input type="text" id="linkedin" />
+          <label for="twitter">Twitter Profile: </label>
+          <input type="text" id="twitter" />
+          <label for="github">Github Profile: </label>
+          <input type="text" id="github" />
+        </div>
+      </div>
     </template>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
