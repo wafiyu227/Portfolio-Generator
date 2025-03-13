@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
   </head>
   <header>
     <nav>
@@ -24,15 +25,17 @@
       efforrt. Just customize the templates below to your satisfaction. You can
       basically make changes to the style, font and theme to fit your intrerest
     </p>
+
+    <div id="container"></div>
+
     <div class="template-grid">
-      <a href="customize.html" target="_blank">
-        <div class="template-card" onclick="selectTemplate(1)">
-          <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
-          <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
-          <h2>Template 1</h2>
-        </div>
-      </a>
-      <div class="template-card">
+      <div class="template-card" id="cloneTemplate">
+        <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
+        <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
+
+        <h2>Template 1</h2>
+      </div>
+      <div class="template-card" id="cloneTemplate">
         <h2>Template 2</h2>
       </div>
       <div class="template-card">
@@ -48,9 +51,9 @@
         <h2>Template 6</h2>
       </div>
     </div>
-    
+
     <template id="template-1">
-      <div class="template-1">
+      <div class="template">
         <h2>Template 1</h2>
         <div class="template">
           <div class="profile-pic">
@@ -128,9 +131,14 @@
         </div>
       </div>
     </template>
-<footer>
-  <p>&copy</p>
-</footer>
-    <script src="index.js"></script>
+    <footer>
+      <p>&copy</p>
+    </footer>
+    <script>
+      document.getElementById("cloneTemplate").addEventListener("click", function () {
+  let template = document.getElementById("template-1").content.cloneNode(true);
+  document.getElementById("container").appendChild(template);
+});
+    </script>
   </body>
 </html>
