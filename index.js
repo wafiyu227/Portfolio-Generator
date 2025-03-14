@@ -7,19 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
 // Function to handle template selection on main.html
 function setupMainPage() {
   const templateContainer = document.getElementById("container");
 
   templateContainer.addEventListener("click", function (event) {
-      let selectedTemplate = event.target.closest(".template"); // Get the clicked template
+    let selectedTemplate = event.target.closest(".template"); // Get the clicked template
 
-      if (selectedTemplate) {
-          localStorage.setItem("selectedTemplate", selectedTemplate.outerHTML); // Save selected template
-          window.open("customize.html", "_blank");; // Redirect to customization page
-      }
+    if (selectedTemplate) {
+      localStorage.setItem("selectedTemplate", selectedTemplate.outerHTML); // Save selected template
+      window.open("customize.html", "_blank"); // Redirect to customization page
+    }
   });
 }
 

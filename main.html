@@ -135,10 +135,18 @@
       <p>&copy</p>
     </footer>
     <script>
-      document.getElementById("cloneTemplate").addEventListener("click", function () {
-  let template = document.getElementById("template-1").content.cloneNode(true);
-  document.getElementById("container").appendChild(template);
-});
+      document
+        .getElementById("cloneTemplate")
+        .addEventListener("click", function () {
+          let template = document
+            .getElementById("template-1")
+            .content.cloneNode(true);
+          document.getElementById("container").appendChild(template);
+          let customizebtn = document.createElement("button");
+          document.getElementById("container").appendChild(customizebtn);
+          customizebtn.innerHTML = "Click here to customize";
+          customizebtn.setAttribute("id", "customize");
+        });
     </script>
   </body>
 </html>
