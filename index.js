@@ -10,13 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to handle template selection on main.html
 function setupMainPage() {
   const templateContainer = document.getElementById("container");
-
+  (templateContainer.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.5)"),
+    (templateContainer.style.padding = "20px"),
+    (templateContainer.style.borderRadius = "10px");
   templateContainer.addEventListener("click", function (event) {
-    let selectedTemplate = event.target.closest(".template"); // Get the clicked template
+    if (event.target.matches(".customize-btn")) {
+      let selectedTemplate = event.target.closest(".template"); // Get the clicked template
 
-    if (selectedTemplate) {
-      localStorage.setItem("selectedTemplate", selectedTemplate.outerHTML); // Save selected template
-      window.open("customize.html", "_blank"); // Redirect to customization page
+      if (selectedTemplate) {
+        localStorage.setItem("selectedTemplate", selectedTemplate.outerHTML); // Save selected template
+        window.open("customize.html", "_blank"); // Redirect to customization page
+      }
     }
   });
 }
@@ -32,4 +36,6 @@ function loadCustomizePage() {
   } else {
     container.innerHTML = "<p>No template selected.</p>"; // Fallback if no template is chosen
   }
+  const selectBtn = document.querySelector(".customize-btn");
+  selectBtn.style.display = "none";
 }

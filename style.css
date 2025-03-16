@@ -72,13 +72,13 @@ textarea {
   text-align: center;
 }
 .about h4 {
-    margin: 0px auto;
-    width: 500px;
+  margin: 0px auto;
+  width: 500px;
 }
 #name {
-    color: orange;
-    font-size: 2rem;
-    font-weight: bold;
+  color: blue;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 .profile-pic {
   height: 200px;
@@ -121,14 +121,34 @@ h2 {
 .social-links {
   display: flex;
   justify-content: center;
+  margin-right: 30px;
 }
 .social-links img {
-  margin: 20px 25px
+  margin: 20px 30px;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgba(20, 139, 236, 0.308);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.customize-btn {
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: blue;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
 }
 footer {
   background-color: brown;

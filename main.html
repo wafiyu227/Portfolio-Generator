@@ -29,7 +29,7 @@
     <div id="container"></div>
 
     <div class="template-grid">
-      <div class="template-card" id="cloneTemplate">
+      <div class="template-card" id="card-1">
         <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
         <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
 
@@ -54,7 +54,9 @@
 
     <template id="template-1">
       <div class="template">
+        <button class="customize-btn">Click here  to Customize</button>
         <h2>Template 1</h2>
+
         <div class="template">
           <div class="profile-pic">
             <img src="/images/Afa Chebi.png" alt="" id="img-profile" />
@@ -71,7 +73,7 @@
             </h4>
           </div>
           <div class="projects">
-            <h2>YOUR PROJECTS</h2>
+            <h2>MY WORK</h2>
             <div class="project-grid">
               <div class="project-card">
                 <img src="/images/Afa Chebi.png" alt="" />
@@ -95,17 +97,25 @@
               </div>
             </div>
           </div>
-          <div class="contacts">
-            <h1>My contacts</h1>
-            <img src="/images/call-icon.jpg" alt="">
-            <h3 class="phone">0596705736</h3>
-            <img src="/images/mdi--email.png" alt="">
-            <h3>ibrahimwafiyudeen@gmail.com</h3>
-          </div>
-          <div class="social-links">
-            <img src="/images/akar-icons--github-fill.png" alt="github-icon">
-            <img src="/images/prime--twitter.png" alt="teitter-icon">
-            <img src="/images/skill-icons--linkedin.png" alt="linkedin-icon">
+          <div class="contact-container">
+            <div class="contacts">
+              <h1>My Contacts</h1>
+              <img src="/images/call-icon.jpg" alt="phone" />
+              <p>059670-5736</p>
+              <img src="/images/mdi--email.png" alt="phone" />
+              <p>ibrahimwafiyudeen@gmail.com</p>
+            </div>
+            <div class="social-links">
+              <img
+                src="/images/akar-icons--github-fill.png"
+                alt="github-icon"
+              />
+              <img src="/images/prime--twitter.png" alt="teitter-icon" />
+              <img
+                src="/images/skill-icons--linkedin.png"
+                alt="linkedin-icon"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -138,18 +148,12 @@
       <p>&copy</p>
     </footer>
     <script>
-      document
-        .getElementById("cloneTemplate")
-        .addEventListener("click", function () {
-          let template = document
-            .getElementById("template-1")
-            .content.cloneNode(true);
-          document.getElementById("container").appendChild(template);
-          let customizebtn = document.createElement("button");
-          document.getElementById("container").appendChild(customizebtn);
-          customizebtn.innerHTML = "Click here to customize";
-          customizebtn.setAttribute("id", "customize");
-        });
+      document.getElementById("card-1").addEventListener("click", function () {
+        let template = document
+          .getElementById("template-1")
+          .content.cloneNode(true);
+        document.getElementById("container").appendChild(template);
+      });
     </script>
   </body>
 </html>
