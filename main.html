@@ -30,15 +30,16 @@
 
     <div class="template-grid">
       <div class="template-card" id="card-1">
-        <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
-        <img src="/images/Screenshot 2025-03-12 131357.png" alt="" />
+        <img src="/images/Screenshot 2025-03-16 133142.png" alt="" />
+        <img src="/images/Screenshot 2025-03-16 132317.png" alt="" />
+        <img src="/images/Screenshot 2025-03-16 132354.png" alt="">
 
         <h2>Template 1</h2>
       </div>
-      <div class="template-card" id="cloneTemplate">
+      <div class="template-card" id="1">
         <h2>Template 2</h2>
       </div>
-      <div class="template-card">
+      <div class="template-card" id="2">
         <h2>Template 3</h2>
       </div>
       <div class="template-card">
@@ -157,9 +158,9 @@
       <p>&copy</p>
     </footer>
     <script>
-      document.getElementById("card-1").addEventListener("click", function () {
+      document.getElementById(`template-${cardNumber}`).addEventListener("click", function () {
         let template = document
-          .getElementById("template-1")
+          .getElementById(`template-${cardNumber}`)
           .content.cloneNode(true);
         document.getElementById("container").appendChild(template);
       });
