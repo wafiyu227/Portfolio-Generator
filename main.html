@@ -36,19 +36,19 @@
 
         <h2>Template 1</h2>
       </div>
-      <div class="template-card" id="">
+      <div class="template-card" id="card-2">
         <h2>Template 2</h2>
       </div>
-      <div class="template-card" id="">
+      <div class="template-card" id="card-3">
         <h2>Template 3</h2>
       </div>
-      <div class="template-card">
+      <div class="template-card" id="card-4">
         <h2>Template 4</h2>
       </div>
-      <div class="template-card">
+      <div class="template-card" id="card-5">
         <h2>Template 5</h2>
       </div>
-      <div class="template-card">
+      <div class="template-card" id="card-6">
         <h2>Template 6</h2>
       </div>
     </div>
@@ -131,6 +131,7 @@
       </div>
     </template>
     <template id="template-2">
+      <button class="customize-btn">Click here to Customize</button>
       <h2>Template 2</h2>
       <div class="template">
         <label for="name">Enter Your Full Name: </label>
@@ -158,12 +159,15 @@
       <p>&copy</p>
     </footer>
     <script>
-      document.getElementById(`template-${cardNumber}`).addEventListener("click", function () {
-        let template = document
-          .getElementById(`template-${cardNumber}`)
-          .content.cloneNode(true);
+      for (let i = 1; i <= 6; i++) {
+    document.getElementById(`card-${i}`).addEventListener("click", function () {
+        let template = document.getElementById(`template-${i}`)
+            .content.cloneNode(true);
+
         document.getElementById("container").appendChild(template);
-      });
+    });
+}
+
     </script>
   </body>
 </html>
