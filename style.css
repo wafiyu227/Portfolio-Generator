@@ -46,8 +46,19 @@ li a {
   text-align: center;
   height: 430px;
   cursor: pointer;
+  width: 300px;
+  margin: 0px auto
 }
-.template-card img {
+.template-card:hover{
+  padding: 1.6rem;
+  transition-duration: 0.5s;
+}
+.template-name {
+  font-family: verdana;
+  font-weight: bolder;
+  color: brown;
+}
+img {
   object-fit: contain;
 }
 
