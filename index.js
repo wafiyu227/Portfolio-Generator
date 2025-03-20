@@ -1,50 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.pathname.includes("main.html")) {
-    setupMainPage();
-  } else if (window.location.pathname.includes("customize.html")) {
-    loadCustomizePage();
-  }
-});
+function loadTemplate(templateName) {
+  const iframe = document.createElement("iframe");
+  iframe.src = `templates/${templateName}.html/${templateName}`; // Load full template
+  iframe.style.width = "80%";
+  iframe.style.height = "100vh"; // Adjust height as needed
+  iframe.style.border = "1px solid"; 
 
-function setupMainPage() {
-  const templateContainer = document.getElementById("container");
-  (templateContainer.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.5)"),
-    (templateContainer.style.padding = "20px"),
-    (templateContainer.style.borderRadius = "10px");
-
-  for (let i = 1; i <= 6; i++) {
-    document.getElementById(`card-${i}`).addEventListener("click", function () {
-      let template = document
-        .getElementById(`template-${i}`)
-        .content.cloneNode(true);
-
-      document.getElementById("container").appendChild(template);
-
-      const selectBtn = document.querySelector(".customize-btn");
-
-      selectBtn.addEventListener("click", function () {
-        const template = document.getElementById(`template-${i}`)
-        selectedTemplate = template;
-
-        if (selectedTemplate) {
-          localStorage.setItem("selectedTemplate", selectedTemplate.outerHTML);
-          window.open("customize.html", "_blank");
-        }
-      });
-    });
-  }
-}
-
-function loadCustomizePage() {
-  const savedTemplate = localStorage.getItem("selectedTemplate");
-  const container = document.getElementById("customizationContainer");
-
-  if (savedTemplate) {
-    container.innerHTML = savedTemplate;
-  } else {
-    container.innerHTML = "<p>No template selected.</p>";
-  }
-
-  const selectBtn = document.querySelector(".customize-btn");
-  selectBtn.style.display = "none";
+  const container = document.getElementById("portfolio-preview");
+  container.innerHTML = ""; // Clear previous template
+  container.appendChild(iframe);
 }

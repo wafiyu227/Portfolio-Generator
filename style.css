@@ -1,172 +1,173 @@
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: brown;
-  padding: 10px;
-}
-nav ul {
-  display: flex;
-}
-li {
-  list-style-type: none;
-  padding: 0px 15px;
-  margin-left: 10px;
-  font-size: 1.5rem;
-}
-li a {
-  text-decoration: none;
-  color: #fff;
-}
-.logo {
-  font-size: 1.5rem;
-  color: #fff;
-}
-.title {
-  text-align: center;
-  font-family: verdana;
-  font-size: 2.5rem;
-}
-.description {
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.template-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.template-card {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 2rem;
-  text-align: center;
-  height: 430px;
-  cursor: pointer;
-}
-.template-card img {
-  object-fit: contain;
-}
-.template-1 {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background-color: #000;
-  color: #fff;
-  padding: 50px 0px;
-}
-.projects p {
-  color: #fff;
-}
-.template-1 a {
-  text-decoration: none;
-}
-
-input,
-label,
-textarea {
-  display: block;
-}
-.about {
-  text-align: center;
-}
-.about h4 {
-  margin: 0px auto;
-  width: 500px;
-}
-#name {
-  color: blue;
-  font-size: 3rem;
-  font-weight: bolder;
-}
-.profile-pic {
-  height: 200px;
-  width: 200px;
-  margin: 0px auto;
-}
-#img-profile {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  margin-top: 2rem;
-}
-.project-card {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  text-align: center;
-  background-color: #fff;
-  padding: 2rem;
-}
-.project-card p {
-  font-family: tahoma;
-  font-weight: bold;
-  color: #000;
-}
-.project-card img {
-  object-fit: contain;
-}
-.projects {
-  margin: 50px;
-}
-h2 {
-  text-align: center;
-}
-.social-links {
-  display: flex;
-  justify-content: center;
-  margin-right: 30px;
-}
-.social-links img {
-  margin: 20px 30px;
-}
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contacts {
-  margin-left: 30px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 50%;
-  border-radius: 10px;
-  background-color: rgba(20, 139, 236, 0.308);
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.customize-btn {
-  padding: 10px;
-  font-size: 1.2rem;
-  background-color: blue;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: bold;
-}
-#p1-nav {
-  width: 50vw;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 100px;
-  background-color: rgba(20, 139, 236, 0.308);
-  border-radius: 15px;
-}
-.p1-navlinks {
-  text-align: center;
-  padding: 7px;
-}.p1-navlinks li a {
-  color: #000;
-  font-weight: bold;
-}
-footer {
-  background-color: brown;
-  margin: 20px 0px;
-  padding: 20px 0px;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    padding: 10px;
+  }
+  nav ul {
+    display: flex;
+  }
+  li {
+    list-style-type: none;
+    padding: 0px 15px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .logo {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .title {
+    text-align: center;
+    font-family: verdana;
+    font-size: 2.5rem;
+  }
+  .description {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .template-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    height: 430px;
+    cursor: pointer;
+  }
+  .template-card img {
+    object-fit: contain;
+  }
+  .template-1 {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0px;
+  }
+  .projects p {
+    color: #fff;
+  }
+  .template-1 a {
+    text-decoration: none;
+  }
+  
+  input,
+  label,
+  textarea {
+    display: block;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h4 {
+    margin: 0px auto;
+    width: 500px;
+  }
+  #name {
+    color: blue;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .profile-pic {
+    height: 200px;
+    width: 200px;
+    margin: 0px auto;
+  }
+  #img-profile {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 2rem;
+  }
+  .project-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+  }
+  .project-card p {
+    font-family: tahoma;
+    font-weight: bold;
+    color: #000;
+  }
+  .project-card img {
+    object-fit: contain;
+  }
+  .projects {
+    margin: 50px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .social-links img {
+    margin: 20px 30px;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacts {
+    margin-left: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(20, 139, 236, 0.308);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .customize-btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  #p1-nav {
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    background-color: rgba(20, 139, 236, 0.308);
+    border-radius: 15px;
+  }
+  .p1-navlinks {
+    text-align: center;
+    padding: 7px;
+  }.p1-navlinks li a {
+    color: #000;
+    font-weight: bold;
+  }
+  footer {
+    background-color: brown;
+    margin: 20px 0px;
+    padding: 20px 0px;
+  }
+  
