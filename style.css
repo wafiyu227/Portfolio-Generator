@@ -51,7 +51,7 @@ li a {
 }
 .template-card:hover {
   padding: 1.6rem;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 .template-name {
   font-family: verdana;
@@ -61,35 +61,23 @@ li a {
 img {
   object-fit: contain;
 }
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 8px;
-  border: 1px solid;
-  width: 12%;
-  padding: 0px 20px;
+.customization {
+  display: none;
+  position: absolute;
+  right: 50px;
+}
+.sideBar {
+  margin: 20px;
+}
+.sideBar div{
+  margin: 15px 0px;
   text-align: center;
-  height: 95%;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 20px
 }
-
-.div2 {
-  grid-row: span 5 / span 5;
-  grid-column-start: 5;
-  
-}
-.div2 ul li a {
+.sideBar ul li a {
   color: #000;
-  margin: 25px auto;
-  padding: 20px 0px;
-  
-}
-.div2 ul li  {
-  color: #000;
-  margin: 15px auto;
-  padding: 20px 0px;
-  
 }
 
 footer {

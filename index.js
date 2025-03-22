@@ -4,13 +4,9 @@ function loadTemplate(templateName) {
   iframe.style.width = "80%";
   iframe.style.height = "100vh"; // Adjust height as needed
   iframe.style.border = "1px solid";
-  iframe.style.display = "inline-block"
-  iframe.style.overflow = "hidden"
+  document.querySelector(".customization").style.display = "inline-block"
+  
 
-  const sideBar = document.querySelector(".parent");
-  sideBar.style.position = "absolute"
-  sideBar.style.top = "40%";
-  sideBar.style.right = "60px"
   
 
   const container = document.getElementById("portfolio-preview");
