@@ -28,17 +28,25 @@
     <div class="customization">
       <div class="sideBar">
         <div class="themes">
-          <label for="myOptions">Choose an option:</label>
-    <input list="options" id="myOptions" name="myOptions" placeholder="Search...">
-          <datalist>
-            <option value="red">red</option>
-            <option value="blue">blue</option>
-            <option value="green">green</option>
-            <option value="yellow">yellow</option>
-          </datalist>
-
+          <select name="" id="theme">
+            <option value="#000">Dark Mode</option>
+            <option value="#fff">Light Mode</option>
+          </select>
         </div>
-        <div class="colors">Colors</div>
+        <div class="colors">
+          <label for="colors">Color: </label>
+          <input type="color">
+         <div class="fonts">
+          <label for="font">Font: </label>
+          <select name="" id="fonts">
+            <option value="verdana">Verdana</option>
+            <option value="tahoma">Tahoma</option>
+            <option value="Gill Sans">Gill Sans</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+          </select>
+         </div>
+          
+        </div>
         <div class="styles">Style</div>
       </div>
     </div>

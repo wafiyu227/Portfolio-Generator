@@ -65,16 +65,27 @@ img {
   display: none;
   position: absolute;
   right: 50px;
+  box-shadow: 0px 0px 4px grey;
+  height: 100%;
+  width: 220px;
+  padding: 10px auto;
+  
 }
-.sideBar {
-  margin: 20px;
+.themes{
+  margin: 50px auto
 }
-.sideBar div{
+.color {
+  margin: 20px auto;
+}
+.fonts {
+  margin: 20px auto
+}
+.sideBar div {
   margin: 15px 0px;
   text-align: center;
   font-family: verdana;
   font-weight: bold;
-  font-size: 20px
+  font-size: 20px;
 }
 .sideBar ul li a {
   color: #000;
