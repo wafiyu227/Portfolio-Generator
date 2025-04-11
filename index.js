@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "main.html";
   });
   document.getElementById("templates").addEventListener("click", () => {
-    window.location.href = "templates.html";
+    document.querySelector(".template-grid").style.display = "grid";
+    
   });
   document.getElementById("contacts").addEventListener("click", () => {
     window.location.href = "contacts.html";
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "pricing.html";
   });
 });
+
 
 function loadTemplate(templateName) {
   const iframe = document.createElement("iframe");
@@ -24,6 +26,9 @@ function loadTemplate(templateName) {
   const container = document.getElementById("portfolio-preview");
   container.innerHTML = "";
   container.appendChild(iframe);
+
+  document.querySelector(".template-grid").style.display = "none"
+  document.querySelector(".description").style.display = "none"
 }
 
 document.getElementById("textColor").addEventListener("input", function () {
@@ -47,3 +52,4 @@ document.getElementById("theme").addEventListener("change", function () {
     iframeDoc.body.style.backgroundColor = this.value;
   }
 });
+
